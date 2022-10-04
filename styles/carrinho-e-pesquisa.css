@@ -3,6 +3,7 @@
   position: sticky;
   width: 35%;
   padding: 2rem 2rem 0 0;
+  background-color: hsl(0, 100%, 100%)
 }
 
 #pesquisa
