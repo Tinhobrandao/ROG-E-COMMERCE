@@ -2,7 +2,7 @@
 {
   position: sticky;
   width: 35%;
-  padding: 2rem 2rem 0 0;
+  padding: 2rem 1rem 0 0;
   color: hsl(0, 100%, 100%);
 }
 
@@ -90,7 +90,8 @@ h2
 }
 
 .carrinho .removeItemDoCarrinho:hover,
-.btn-limparCarrinho:hover
+.btn-limparCarrinho:hover, 
+.btn-finalizarCompra:hover
 {
   cursor: pointer;
   background-color: hsl(0, 0%, 10%);
@@ -101,7 +102,7 @@ h2
 
 .carrinho #p1 
 {
-  margin-top: 2rem;
+  margin-top: 3rem;
   font-size: 1.2rem;
   font-weight: 700;
   color: hsl(0, 0%, 75%);
@@ -109,20 +110,27 @@ h2
 
 .carrinho #p2 
 {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   color: hsl(0, 0%, 50%);
 }
 
-.btn-limparCarrinho
+.btn-limparCarrinho,
+.btn-finalizarCompra
 {
   width: 100%;
   padding: .2rem .3rem;
-  margin: .5rem 0;
+  margin: .25rem 0;
   font-size: 1.2rem;
   background: inherit;  
   color: hsl(0, 0%, 100%);
   border-radius: 1.5rem;
   border: .15rem solid hsl(0, 0%, 100%);
+}
+
+.btn-finalizarCompra:hover
+{
+  color: hsl(125, 100%, 65%);
+  border-color: hsl(125, 100%, 55%);
 }
 
 .carrinho .quantidadeItem 
@@ -132,6 +140,7 @@ h2
 
 .check-out 
 {
+  margin-bottom: 1rem;
   padding: .3rem .1rem;
   display: flex;
   flex-wrap: wrap;
@@ -151,12 +160,4 @@ h2
 {
   flex: 1 30%;
   text-align: center;
-}
-
-#rogGif 
-{
-  /*background: url(https://media3.giphy.com/media/WvcovtzdPMmnrdNvuK/giphy.gif?cid=ecf05e47b0d17e7e93b52e54d4c2770a60e70dc9dd4a444d&rid=giphy.gif&ct=g);*/
-  background-size: cover;
-  border-radius: 10px;
-  margin-left: 25px;
 }
