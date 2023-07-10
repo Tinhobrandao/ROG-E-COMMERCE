@@ -1,0 +1,40 @@
+@media screen and (max-width: 1000px) 
+{
+  .itemCarrinho
+  {
+    flex-direction: column;
+  }
+
+  .itemCarrinho .imagem
+  {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 530px) 
+{
+  .menuDeCategorias
+  {
+    flex-direction: column;
+  }
+
+  .menuDeCategorias img
+  {
+    margin-right: 0;
+  }
+  
+  .itemBox
+  {
+    width: 10rem;
+  }
+
+  .carrinhoePesquisa
+  {
+    width: 55%;
+  }
+
+  #iconeCarrinho
+  {
+    display: block;
+  }
+}

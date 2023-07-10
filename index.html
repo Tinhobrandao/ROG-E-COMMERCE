@@ -2,69 +2,65 @@
 <html lang="PT-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width. initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/carrinho-e-pesquisa.css">
-    <link rel="shortcut icon" type="imagex/png" href="./imgs and vectors/asus-rog-1.svg">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width. initial-scale=1.0">
+  <link rel="shortcut icon" type="imagex/png" href="./imgs and vectors/asus-rog-1.svg">
+  <!--CSS-->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/carrinho-e-pesquisa.css">
+  <link rel="stylesheet" href="./styles/animations.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+  <!--JS-->
+  <script defer src="./script/base-de-produtos.js"></script>
+  <script defer src="./script/script.js"></script>
+  <script defer src="./script/filterList-&-search.js"></script>
 
-
-
-    <title>ROG Store</title>
+  <title>ROG Store</title>
 </head>
 
-
-
 <body>
-    <header>
-        <ul class="menuDeCategorias">
-            <div class="rogItem">
-                <li class="menu-logo "> <img id="logo " src="./imgs and vectors/asus-rog-1.svg " alt="logo "> </li>
-            </div>
-            <div class="itensMenu">
-                <li class="menu " data-tag="Todos">Todos</li>
-                <li class="menu " data-tag="Placa-mãe">Placa-mãe</li>
-                <li class="menu " data-tag="Monitor">Monitor</li>
-                <li class="menu " data-tag="Placa de vídeo">Placa de vídeo</li>
-            </div>
-        </ul>
-    </header>
-    <main class="container ">
-        <section class="produtos">
-        </section>
-        <div class="carrinhoePesquisa">
-            <section class="pesquisa " id="pesquisa ">
-                <input type="text" placeholder="Digite aqui sua pesquisa">
-                <button type="submit">Pesquisar</button>
-            </section>
-            <aside class="carrinho " id="carrinho ">
-                <h2>Carrinho de compras</h2>
-                <p class="limpa" id="p1">Carrinho vazio</p>
-                <p class="limpa" id="p2">Adicione itens</p>
-                <!-- FUNÇÃO DE LIMPAR O CARRINHO PARA ADICIONAR DEPOIS
-                <button class="btn-limparCarrinho">Limpar Carrinho</button> -->
+  <header>
+    <ul class="menuDeCategorias itensMenu">  
+      <li> 
+        <img id="logo " src="./imgs and vectors/asus-rog-1.svg " alt="logo"> 
+      </li>
+      <li class="menu_item" data-tag="Todos">Todos</li>
+      <li class="menu_item" data-tag="Placa-mãe">Placa-mãe</li>
+      <li class="menu_item" data-tag="Monitor">Monitor</li>
+      <li class="menu_item" data-tag="Placa de vídeo">Placa de vídeo</li>
+      </div>
+    </ul>
+  </header>
 
-            </aside>
-            <section class="check-out">
-                <div class="listaCheckout">Quantidade:</div>
-                <p class="quantidade"> <span id="quantidade">0</span></p>
-                <div class="listaCheckout">Total:</div>
-                <p class="valorTotal">R$ <span id="valorTotal">0</span> </p>
-            </section>
-            <div id="rogGif">
-            </div>
-        </div>
-    </main>
-    <script src="./script/base-de-produtos.js"></script>
-    <script src="./script/script.js"></script>
-    <script src="./script/filterList-&-search.js"></script>
-
+  <main class="container ">
+    <section class="produtos">
+    </section>
+    <div class="carrinhoePesquisa">
+      
+      <input id="pesquisa" type="text" placeholder="Buscar">
+      
+      <h2>Carrinho</h2>
+      <aside class="carrinho " id="carrinho ">
+        <p class="limpa" id="p1">Carrinho vazio</p>
+        <p class="limpa" id="p2">Adicione itens</p>
+      </aside>
+      <!-- FUNÇÃO DE LIMPAR O CARRINHO PARA ADICIONAR DEPOIS-->
+      
+      <section class="check-out">
+        <span class="listaCheckout">Quantidade:</span>
+        <span class="quantidade" id="quantidade">0</span>
+        <div class="listaCheckout">Total:</div>
+        <span class="valorTotal" id="valorTotal">R$ 0.00</span>
+      </section>
+      
+      <button class="btn-limparCarrinho">Limpar Carrinho</button>
+      <button class="btn-finalizarCompra">Finalizar Compra</button>
+    </div>
+  </main>
+  
 
 </body>
 

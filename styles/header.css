@@ -1,88 +1,41 @@
-.menuDeCategorias {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
-    height: 80px;
-    border-bottom: 1px solid white;
+.menuDeCategorias 
+{
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  color: hsl(0, 100%, 100%);
+  box-shadow: 0 .1rem .1rem hsl(0, 0%, 100%);
 }
 
-.menu {
-    display: inline-block;
-    padding: 10px;
-    margin-right: 28px;
+.menu_item 
+{
+  padding: 1rem;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  border-radius: 1rem;
+  font-size: 1.5rem;
 }
 
-.menu:hover {
-    background: linear-gradient(270deg, #2e245e, lightblue, #2e245e);
-    background-size: 600% 600%;
-    animation: hoverDoItemBox 5s ease infinite;
-    cursor: pointer;
-    border-radius: 5px;
+.menu_item:hover 
+{
+  background: linear-gradient(270deg, hsl(250, 45%, 25%),
+                                      hsl(195, 50%, 40%),
+                                      hsl(0, 65%, 25%));
+  background-size: 600% 600%;
+  animation: hovering 5s ease infinite;
+  box-shadow: 0rem 0rem .2rem hsl(0, 100%, 100%);
+  cursor: pointer;
 }
 
-.menuDeCategorias img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 130px;
-    height: 45px;
-    margin-left: 140px;
-    background: linear-gradient(to right, red, #2e245e, rgb(235, 0, 0), #2e245e);
-    background-size: 600% 600%;
-    animation: headerTransition 1s ease infinite;
-    border-radius: 30px 30px 30px 30px;
-    box-shadow: rgb(0, 0, 0) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, black 0px 8px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
-
-.menuDeCategorias img:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.rogName {
-    display: inline-block;
-    background: linear-gradient(to right, rgb(3, 1, 1), #2e245e, rgb(235, 0, 0), #2e245e);
-    background-size: 600% 600%;
-    animation: headerTransition 3s ease-in infinite;
-    border-radius: 30px 30px 30px 30px;
-    margin-left: 100px;
-    margin-top: 10px;
-}
-
-.rogName:hover {
-    transform: rotateX(720deg);
-    transition: 3s;
-}
-
-ul {
-    list-style: none;
-}
-
-@keyframes hoverDoMenu {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@keyframes headerTransition {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
+.menuDeCategorias img 
+{
+  height: 3rem;
+  width: 8rem;
+  margin-right: 6rem;
+  border-radius: 2rem;
 }
